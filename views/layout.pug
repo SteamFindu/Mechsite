@@ -1,51 +1,35 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
-    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
-    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6', crossorigin='anonymous')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    title MechSite
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Cabin:700')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 
-  body
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light
-      a.navbar-brand(href='#') Navbar
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href='#')
-              | Home
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link(href='#') Link
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              | Dropdown
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') Action
-              a.dropdown-item(href='#') Another action
-              .dropdown-divider
-              a.dropdown-item(href='#') Something else here
-          li.nav-item
-            a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled
-        form.form-inline.my-2.my-lg-0
-          input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
-          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+  body#page-top
+    nav#mainNav.navbar.navbar-light.navbar-expand-md.navbar.navbar-expand-lg.fixed-top
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#') MechSite
+        button.navbar-toggler.navbar-toggler-right(data-toggle='collapse', data-target='#navbarResponsive', type='button', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation', value='Menu')
+          i.fa.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.nav.navbar-nav.ml-auto
+            li.nav-item.nav-link.js-scroll-trigger(role='presentation')
+              a.nav-link.active.js-scroll-trigger(href='#about') About
+            li.nav-item.nav-link.js-scroll-trigger(role='presentation')
+              a.nav-link.js-scroll-trigger(href='#contact') Contact
 
     block content
+    footer
+      .container.text-center
+        p Copyright © MechSite 2020
 
-
-    footer.my-5.pt-5.text-muted.text-center.text-small
-      p.mb-1 © 2020-2020 Fake Keycompany org
-      ul.list-inline
-        li.list-inline-item
-          a(href='#') Privacy
-        li.list-inline-item
-          a(href='#') Terms
-        li.list-inline-item
-          a(href='#') Support
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    script(src='/javascripts/grayscale.js')
 
 

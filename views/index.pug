@@ -1,4 +1,25 @@
 extends layout
 
 block content
-  h1 this is truly magic
+  header.masthead(style='background-image: url("/images/modifiedKeyboards.jpg");')
+    .intro-body
+      .container
+        .row
+          .col-lg-8.mx-auto
+            h1.brand-heading Mechsite
+            p.intro-text A retailer of quality mechanical keyboard parts and accesories.
+            button.btn.btn-primary.btn-lg.btn-default(type='button', href='/products') Products
+  section#about.content-section.text-center(style='height: 400px;padding-top: 100px;padding-bottom: 100px;')
+    .container
+      .row
+        .col-lg-8.mx-auto
+          h2 About Mechsite
+          p MechSite is a web retailer for mechanical keyboard switches based in Finland.
+          p We offer great customer service and great shipping time and cost in EU.
+          p Our store contains the hottest items in keyboard switches and accessories.
+  section#contact.download-section.content-section.text-center(style='background-image: url("/images/Modifiedkailh.jpg");')
+    .container
+      .col-lg-8.mx-auto
+        h2(style='font-size: 35px;text-transform: none;font-family: Lora, serif;') Contact us if you have any questions
+        p
+        button.btn.btn-primary.btn-lg.btn-default(type='button') Contact
