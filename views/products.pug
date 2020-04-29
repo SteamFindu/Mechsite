@@ -1,4 +1,37 @@
 extends layout
+block links
+    link(rel='stylesheet', href='/stylesheets/Feature-Boxed.css')
 
 block content
-    h1 it opened products
+    section#products.pt-5
+        .features-boxed(style='background-color: rgb(0,0,0);color: rgb(255,255,255);')
+            .container
+                .intro
+                    h2.text-center Features
+                    p.text-center(style='color: rgb(213,213,213);')
+                        | Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.
+                .row.justify-content-center.features(style='color: rgb(0,0,0);')
+                    .col-sm-6.col-md-5.col-lg-4.item
+                        .box
+                            img(style='width: 150px;height: 150px;')
+                            h3.name(style='padding-top: 40px;color: rgb(0,0,0);') Works everywhere
+                    .col-sm-6.col-md-5.col-lg-4.item
+                        .box
+                            img(style='width: 150px;height: 150px;')
+                            h3.name(style='padding-top: 40px;') Works everywhere
+                    .col-sm-6.col-md-5.col-lg-4.item
+                        .box
+                            img(style='width: 150px;height: 150px;')
+                            h3.name(style='padding-top: 40px;') Works everywhere
+                    .col-sm-6.col-md-5.col-lg-4.item
+                        .box
+                            img(style='width: 150px;height: 150px;')
+                            h3.name(style='padding-top: 40px;') Works everywhere
+                    .col-sm-6.col-md-5.col-lg-4.item
+                        .box
+                            img(style='width: 150px;height: 150px;')
+                            h3.name(style='padding-top: 40px;') Works everywhere
+                    .col-sm-6.col-md-5.col-lg-4.item
+                        .box
+                            img(style='width: 150px;height: 150px;')
+                            h3.name(style='padding-top: 40px;') Works everywhere
