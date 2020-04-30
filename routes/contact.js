@@ -6,8 +6,4 @@ router.get('/', function(req, res, next) {
     res.render('contact', { title: 'Contact' });
 });
 
-app.post('/', function (req, res) {
-    res.send('POST request to homepage')
-})
-
 module.exports = router;
